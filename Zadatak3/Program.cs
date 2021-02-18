@@ -27,6 +27,8 @@ namespace Vsite.CSharp.Ispit.Zadatak3
             while (bačeniBroj != 6) {
                 bačeniBroj = generatorSlučajnih.Next(1, 7);
                 brojBacanja++;
+                if (bačeniBroj == 6)
+                    break;
                 Console.WriteLine(bačeniBroj);
             }
          
