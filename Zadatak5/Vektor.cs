@@ -17,8 +17,19 @@ namespace Vsite.CSharp.Ispit.Zadatak5
     // vektora prema njihovim duljinama.
     // Neke moguće kombinacije koje treba podržati navedene su u metodi Main.
 
-    class Vektor
+    class Vektor : IComparable<Vektor>
     {
+        public double Modul() {
+
+            return Math.Sqrt(X * X + Y * Y);
+        }
+
+        public int CompareTo(Vektor other) {
+            //var vektor1 = (IComparable<Vektor>)v1;
+            //int usporedba = vektor1.CompareTo(other);
+            throw new NotImplementedException();
+        }
+
         public Vektor(double x, double y)
         {
             X = x;

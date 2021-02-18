@@ -14,6 +14,11 @@ namespace Vsite.CSharp.Ispit.Zadatak6
 
     class Osoba
     {
+
+        public virtual void PredstaviSe() {
+
+            Console.WriteLine(Ime);
+        }
         public Osoba(string ime)
         {
             Ime = ime;
@@ -22,11 +27,15 @@ namespace Vsite.CSharp.Ispit.Zadatak6
         public string Ime { get; private set; }
     }
 
-    class Student
-    {
-        public Student(string ime, int godina)
-        {
+    class Student :Osoba  {
+
+
+        public override void PredstaviSe() {
+            Console.WriteLine(Ime + ", student"+Godina +". godine");
+        }
+        public Student(string ime, int godina) : base(ime) {
             Godina = godina;
+            
         }
 
         public int Godina { get; private set; } 

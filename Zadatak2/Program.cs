@@ -18,12 +18,33 @@ namespace Vsite.CSharp.Ispit.Zadatak2
             Console.WriteLine("Niz brojeva");
 
             var nizBrojeva = new int[] { 10, 20, 3, -4, 0, -5 };
-            //KlasificirajBrojeve(nizBrojeva); // metoda bi trebala ispisati brojeve 3, 2 i 1
+            KlasificirajBrojeve(nizBrojeva); // metoda bi trebala ispisati brojeve 3, 2 i 1
 
             Console.WriteLine("Lista brojeva");
 
             var listaBrojeva = new List<int>{ 0, -5, 24, 0, 32, 0 };
-            //KlasificirajBrojeve(listaBrojeva); // metoda bi trebala ispisati brojeve 2, 1 i 3
+            KlasificirajBrojeve(listaBrojeva); // metoda bi trebala ispisati brojeve 2, 1 i 3
+        }
+
+
+        public static void KlasificirajBrojeve(IEnumerable<int> nizBrojeva1){
+            int veciOdNule = 0;
+            int manjiOdNule = 0;
+            int jednakiNuli = 0;
+         
+
+            foreach (int  i in nizBrojeva1){
+                if(i > 0){
+                    veciOdNule++;
+                }else if(i < 0){
+                 manjiOdNule ++;
+                 }else if(i == 0){
+                    jednakiNuli++;
+                }
+            }
+            
+                Console.WriteLine(veciOdNule + " " + manjiOdNule + " " + jednakiNuli);
+        
         }
     }
 }
