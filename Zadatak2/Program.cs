@@ -13,17 +13,42 @@ namespace Vsite.CSharp.Ispit.Zadatak2
         // Ispis treba sadržavati samo brojeve, bez ikakvog teksta.
         // Nakon što definirate metodu, njenu funkcionalnost provjerite tako da odkomentirate oba poziva metode u donjoj metodi Main.
 
-        public static void Main()
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Niz brojeva");
-
-            var nizBrojeva = new int[] { 10, 20, 3, -4, 0, -5 };
-            //KlasificirajBrojeve(nizBrojeva); // metoda bi trebala ispisati brojeve 3, 2 i 1
-
-            Console.WriteLine("Lista brojeva");
-
-            var listaBrojeva = new List<int>{ 0, -5, 24, 0, 32, 0 };
-            //KlasificirajBrojeve(listaBrojeva); // metoda bi trebala ispisati brojeve 2, 1 i 3
+            var nizBrojeva = new int[] { 2, 1, -3, 3 };
+            KlasificirajBrojeve(nizBrojeva);
+            var listaBrojeva = new List<int> { 2, -3, 0 };
+            KlasificirajBrojeve(listaBrojeva);
         }
+
+        private static void KlasificirajBrojeve(IEnumerable<int> nizBrojeva)
+        {
+            int brojac1 = 0;
+            int brojac2 = 0;
+            int brojac3 = 0;
+            foreach (var item in nizBrojeva)
+            { 
+                if (item < 0)
+                {
+                    brojac1++;
+                }
+                else if(item < 0)
+                {
+                    brojac2++;
+                }
+                else 
+                {
+                    brojac3++;
+                }
+            
+            }
+            Console.WriteLine(brojac1 + "    " + brojac2 + "    " + brojac3);
+        }
+
+        
+
+        
+
+        
     }
 }
