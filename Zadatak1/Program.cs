@@ -8,14 +8,16 @@ namespace Vsite.CSharp.Ispit.Zadatak1
 {
     class Program
     {
-        public void Main(string[] args) 
+         static void Main(string[] args) 
         {
-            double unos = 1;
-            Console.WriteLine("unesi broj od 1 do 30");
-            while (unos>1 || unos <30)
+           
+            
+            for (int i=1; i<30; i++)
             {
-                unos = double.Parse(Console.ReadLine());
-                Console.WriteLine(unos + "       " + unos / 3);
+                
+                
+                Console.WriteLine(i + "       " + (double)i / 3);
+                
             
             
             
