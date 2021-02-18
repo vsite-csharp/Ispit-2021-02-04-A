@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Vsite.CSharp.Ispit.Zadatak5
 {
-    // TODO: Zadatak 5: U klasi Vektor definirati javnu metodu Modul koja će vraćati duljinu vektora. Npr. za vektor 
+    //  Zadatak 5: U klasi Vektor definirati javnu metodu Modul koja će vraćati duljinu vektora. Npr. za vektor 
     // zadan konstruktorom:
     //   var v1 = new Vektor(2, 4);
     // poziv:
@@ -16,9 +16,13 @@ namespace Vsite.CSharp.Ispit.Zadatak5
     // Potom definirati da klasa Vektor implementira sučelje IComparable<T> koje će omogućiti međusobnu usporedbu dva 
     // vektora prema njihovim duljinama.
     // Neke moguće kombinacije koje treba podržati navedene su u metodi Main.
-
+    
     class Vektor
     {
+        public Modul()
+        {
+
+        }
         public Vektor(double x, double y)
         {
             X = x;
