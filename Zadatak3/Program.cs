@@ -8,7 +8,7 @@ namespace Vsite.CSharp.Ispit.Zadatak3
 {
     class Program
     {
-        // TODO: Zadatak 3: U metodi BacanjaKocke složiti petlju koja će ispisivati bačeniBroj od 1 do 6
+        //  U metodi BacanjaKocke složiti petlju koja će ispisivati bačeniBroj od 1 do 6
         // (koji se dobiva pozivom metode Random.Next) sve dok je taj broj različit od 6. Kada broj postane 
         // 6, treba prekinuti ponavljanje petlje i ispisati poruku: 
         // "Šestica je bačena u <N>. pokušaju", gdje je N redni broj bacanja u kojem se pojavio broj 6.
@@ -21,11 +21,23 @@ namespace Vsite.CSharp.Ispit.Zadatak3
 
         public static void BacanjaKocke(int klica)
         {
+            
             var generatorSlučajnih = new Random(klica);
 
             int brojBacanja = 0;
             int bačeniBroj = 0;
-
+            
+            for (bačeniBroj = 0; bačeniBroj <= 6; ++bačeniBroj)
+            {
+                if (bačeniBroj<=6)
+                {
+                    Console.WriteLine(bačeniBroj);
+                }
+                else
+                {
+                    Console.WriteLine("Šestica je bačena u <N>. pokušaju");
+                }
+            }
             bačeniBroj = generatorSlučajnih.Next(1, 7);
             Console.WriteLine(bačeniBroj);
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Vsite.CSharp.Ispit.Zadatak4
 {
-    // TODO: Zadatak 4: Strukturu KompleksniBroj dopuniti tako da ispis tog objekta u metodi Console.WriteLine
+    //  Strukturu KompleksniBroj dopuniti tako da ispis tog objekta u metodi Console.WriteLine
     // ispiše taj broj u uobičajenom matematičkom formatu: <realniDio> + <imaginarniDio>i
     // Npr.
     //     Console.WriteLine(new KompleksniBroj(5, 4);
@@ -24,5 +24,11 @@ namespace Vsite.CSharp.Ispit.Zadatak4
 
         public readonly double Realni;
         public readonly double Imaginarni;
+
+        public override string ToString()
+        {
+            return Realni+" "+"+"+" "+ Imaginarni+"i";
+        }
     }
+
 }
