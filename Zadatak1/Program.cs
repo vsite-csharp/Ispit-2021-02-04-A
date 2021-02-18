@@ -20,7 +20,7 @@ namespace Vsite.CSharp.Ispit.Zadatak1
             double broj = 0;
                for(int i = 1;i <= 30;i++){
                         broj = i;
-                    Console.WriteLine(i + " " + broj/3);
+                    Console.WriteLine(i + "   " + broj/3);
                     
             }
 
