@@ -24,5 +24,11 @@ namespace Vsite.CSharp.Ispit.Zadatak4
 
         public readonly double Realni;
         public readonly double Imaginarni;
+
+        public override string ToString() {
+
+            return Realni + " " + Imaginarni + "i";
+        }
     }
 }
+

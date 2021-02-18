@@ -11,7 +11,7 @@ namespace Vsite.CSharp.Ispit.Zadatak6
         static void Predstavljanje(object obj)
         {
             var o = (Osoba)obj;
-            //o.PredstaviSe();
+            o.PredstaviSe();
         }
 
         static void Main(string[] args)

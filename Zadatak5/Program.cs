@@ -22,7 +22,7 @@ namespace Vsite.CSharp.Ispit.Zadatak5
 
         public static void IspisDuljineVektora(Vektor v)
         {
-            // Console.WriteLine($"Duljina vektora ({v.X}, {v.Y}) je {v.Modul()}");
+            Console.WriteLine($"Duljina vektora ({v.X}, {v.Y}) je {v.Modul()}");
         }
 
         static void Main(string[] args)

@@ -19,6 +19,11 @@ namespace Vsite.CSharp.Ispit.Zadatak5
 
     class Vektor
     {
+        public double Modul() {
+
+            return Math.Sqrt(X * X + Y * Y);
+        }
+
         public Vektor(double x, double y)
         {
             X = x;

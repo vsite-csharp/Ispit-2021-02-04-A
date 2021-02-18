@@ -22,12 +22,14 @@ namespace Vsite.CSharp.Ispit.Zadatak3
         public static void BacanjaKocke(int klica)
         {
             var generatorSlučajnih = new Random(klica);
-
             int brojBacanja = 0;
             int bačeniBroj = 0;
-
-            bačeniBroj = generatorSlučajnih.Next(1, 7);
-            Console.WriteLine(bačeniBroj);
+            while (bačeniBroj != 6) {
+                bačeniBroj = generatorSlučajnih.Next(1, 7);
+                brojBacanja++;
+                Console.WriteLine(bačeniBroj);
+            }
+         
 
             Console.WriteLine($"Šestica je bačena u {brojBacanja}. pokušaju");
         }
