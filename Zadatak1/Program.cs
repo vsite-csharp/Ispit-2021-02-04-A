@@ -16,7 +16,6 @@ namespace Vsite.CSharp.Ispit.Zadatak1
             // 2    0,6666666
             // 3    1
             // ....
-
         }
     }
 }
